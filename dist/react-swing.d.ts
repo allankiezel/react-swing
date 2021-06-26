@@ -8,6 +8,10 @@ import * as swing from 'swing';
 interface IReactSwingProps {
     setStack: (stack: swing.Stack) => void;
     config: any;
+    children: any;
+    className: string;
+    ref: any;
+    throwout: any;
 }
 declare type TReactSwing = React.ForwardRefExoticComponent<IReactSwingProps> & {
     EVENTS: swing.Event[];
